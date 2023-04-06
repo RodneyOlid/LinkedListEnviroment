@@ -7,6 +7,8 @@ public class LinkedListTest {
         SampleList.insertAtBack("Sample 4");
         SampleList.print();
         System.out.println(SampleList.size());
+        SampleList.removeFromFront();
+        SampleList.print();
 
     }
 }

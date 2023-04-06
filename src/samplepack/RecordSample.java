@@ -29,9 +29,9 @@ public class RecordSample {
         System.out.println();
         sample2.printInfo();
         System.out.println();
-        sample3.printInfo();
+        //sample3.printInfo();
         System.out.println();
-        sample4.printInfo();
+        //sample4.printInfo();
         System.out.println(EnviroSamples.amount);
 
 

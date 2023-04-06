@@ -1,3 +1,5 @@
+import java.util.NoSuchElementException;
+
 public class Mylist< T >
 {
 
@@ -20,7 +22,14 @@ public class Mylist< T >
         name = listName;
         firstNode = lastNode = null;
     }
-
+    public T removeFromFront() throws NoSuchElementException {
+        if(isEmpty()){
+            throw new NoSuchElementException(name);
+        }
+        T removeItem = firstNode.data;
+        firstNode = firstNode.nextNode;
+        return removeItem;
+    }
     //insert item in front
     public void insertAtFront (T insertItem)
     {
